@@ -1,0 +1,34 @@
+﻿@model Cyrsovay.Models.BTGPModel
+<dl>
+    <dt>Название</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <dt>Автор</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Familia)
+    </dd>
+
+    <dt>Цена</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Otchestvo)
+    </dd>
+    <dd>
+        @Html.DisplayFor(model => model.Cyrs)
+    </dd>
+    <dd>
+        @Html.DisplayFor(model => model.Speciality)
+    </dd>
+    <dd>
+        @Html.DisplayFor(model => model.State)
+    </dd>
+    <dd>
+        @Html.DisplayFor(model => model.Postypil)
+    </dd>
+</dl>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Удалить" />
+}
